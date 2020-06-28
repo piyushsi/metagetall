@@ -46,12 +46,12 @@ exports.metagetall = (url)=> {
 					});
 				Data.push(title);
 				var metaData = Object.assign({}, ...Data);
-				res.json(metaData);
+				return metaData;
 			} else {
-				res.send('meta not found');
+				return 'meta not found';
 			}
 		})
 		.catch((err) => {
-			res.send('Try Again');
+			return 'Try Again';
 		});
   }
