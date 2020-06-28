@@ -16,8 +16,7 @@ npm install metagetall --save
 
 ``` javascript
 const metagetall = require('metagetall');
-    const metaResponse = metagetall('https://wordpress.com');
-    console.log('metaResponse', metaResponse);
+metagetall.fetch('https://wordpress.com').then(res=>{console.log(res);});
 ```
 
 

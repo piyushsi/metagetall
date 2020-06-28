@@ -1,5 +1,6 @@
-exports.metagetall = (url)=> {
-    fetch(`https://${url}`)
+const nfetch = require('node-fetch');
+const fetch = (url)=> {
+   return  nfetch(url)
 		.then((res) => {
 			return res.text();
 		})
@@ -51,7 +52,7 @@ exports.metagetall = (url)=> {
 				return 'meta not found';
 			}
 		})
-		.catch((err) => {
-			return 'Try Again';
-		});
   }
+  module.exports = {
+    fetch
+};
