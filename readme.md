@@ -16,13 +16,16 @@ npm install metagetall --save
 
 ``` javascript
 const metagetall = require('metagetall');
-metagetall.fetch('https://wordpress.com').then(res=>{console.log(res);});
+metagetall.fetch('https://altcampus.io').then(res=>{console.log(res);});
 ```
 
 
 Response will be an Object containing all the meta tags from the URL. All tags are output in the example above.
 
-
+## Stack/Library/Module Used
+```
+"node-fetch": "^2.6.0"
+```
 
 ## Contributing
 
