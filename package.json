@@ -1,0 +1,11 @@
+{
+  "name": "metagetall",
+  "version": "1.0.0",
+  "description": "A Node.js module to fetch HTML meta tags and custom meta tags from a remote URL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piyush Sinha",
+  "license": "ISC"
+}
